@@ -8,16 +8,20 @@ class Openboot < Formula
 
   on_arm do
     url "https://github.com/openbootdotdev/openboot/releases/download/v0.22.0/openboot-darwin-arm64"
-    sha256 "3b73759dad1d7ef59804bb5f1b4fb2adc14740730622daa9f6b8bc7c4148eeb5"
+    sha256 "e963d98018c634f7d0189cc89adeea761a80e0e55c8379372fdd7291ed11e0e9"
   end
 
   on_intel do
     url "https://github.com/openbootdotdev/openboot/releases/download/v0.22.0/openboot-darwin-amd64"
-    sha256 "b71aaa9a220dc7042fa0375daf38319e180a2a08c55bd1da0d1b0fcc1db9874c"
+    sha256 "8fbc084cbd453499866c71a695b6d52851c281d3a971f2f9815335e6ceacda21"
   end
 
   def install
-    bin.install "openboot-darwin-#{Hardware::CPU.arch}" => "openboot"
+    if Hardware::CPU.arm?
+      bin.install "openboot-darwin-arm64" => "openboot"
+    else
+      bin.install "openboot-darwin-amd64" => "openboot"
+    end
   end
 
   test do
