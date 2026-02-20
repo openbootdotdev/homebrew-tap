@@ -8,12 +8,12 @@ class Openboot < Formula
 
   on_arm do
     url "https://github.com/openbootdotdev/openboot/releases/download/v0.30.0/openboot-darwin-arm64"
-    sha256 "e82da938c8faffe8f1020a481b083d495367eaf7b73757fa98874de87ae43291"
+    sha256 "549052f33ea87c80e2a36c4c012c9ac5c4b0834006f71d8bbce61b9d131c8796"
   end
 
   on_intel do
     url "https://github.com/openbootdotdev/openboot/releases/download/v0.30.0/openboot-darwin-amd64"
-    sha256 "631f4af4d94dfd8f4b9f3994533723b11c9665e9a124f88d65ebedd5b520253c"
+    sha256 "a4bd4278d633a859890f551f6943f27f84b5d87d68facce9a8e4b43a3977fe9d"
   end
 
   def install
