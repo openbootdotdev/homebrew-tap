@@ -16,7 +16,7 @@ jobs:
         run: brew tap openbootdotdev/tap "$(pwd)"
 
       - name: Audit formula
-        run: brew audit --tap openbootdotdev/tap
+        run: brew audit --formula Formula/openboot.rb
 
       - name: Check style
-        run: brew style --tap openbootdotdev/tap
+        run: brew style Formula/openboot.rb
