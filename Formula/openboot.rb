@@ -1,17 +1,17 @@
 class Openboot < Formula
   desc "Set up your macOS dev environment in one command"
   homepage "https://openboot.dev"
-  version "0.58.5"
+  version "0.58.6"
   license "MIT"
 
   depends_on :macos
 
   if Hardware::CPU.arm?
-    url "https://github.com/openbootdotdev/openboot/releases/download/v0.58.5/openboot-darwin-arm64"
-    sha256 "821b52aa85e54f0d6ec2a1446a83bd9ef3e0f64a37ead963f4c5727f18965475"
+    url "https://github.com/openbootdotdev/openboot/releases/download/v0.58.6/openboot-darwin-arm64"
+    sha256 "d7875970f8c94f6609ef5e2928dd885435afd320083d2a113c0b56e24b917d70"
   else
-    url "https://github.com/openbootdotdev/openboot/releases/download/v0.58.5/openboot-darwin-amd64"
-    sha256 "2ed5529354fcf7cb371056c730217fe23afdad3a646d71dbc827dc6a4d9ba70e"
+    url "https://github.com/openbootdotdev/openboot/releases/download/v0.58.6/openboot-darwin-amd64"
+    sha256 "977ba5062069d3056800865ccde16efa68a1bd59db5dd47426b076e174aeeb46"
   end
 
   def install
