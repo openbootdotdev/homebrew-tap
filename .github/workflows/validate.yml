@@ -15,6 +15,9 @@ jobs:
       - name: Tap this repository
         run: brew tap openbootdotdev/tap "$(pwd)"
 
+      - name: Trust this tap
+        run: brew trust openbootdotdev/tap
+
       - name: Audit formula
         run: brew audit openbootdotdev/tap/openboot
 
