@@ -1,7 +1,6 @@
 class Openboot < Formula
   desc "Set up your macOS dev environment in one command"
   homepage "https://openboot.dev"
-  version "1.0.6"
   license "MIT"
 
   depends_on :macos
