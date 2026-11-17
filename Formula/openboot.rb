@@ -6,11 +6,11 @@ class Openboot < Formula
   depends_on :macos
 
   if Hardware::CPU.arm?
-    url "https://github.com/openbootdotdev/openboot/releases/download/v1.0.7/openboot-darwin-arm64"
-    sha256 "8410e7dc75d85f732bb65a9c2f0e440afb9646db6624a1f1b1927e2ebe4f5e76"
+    url "https://github.com/openbootdotdev/openboot/releases/download/v1.0.8/openboot-darwin-arm64"
+    sha256 "0949b775fcce62128b4a0e625087e160dcbcc9c80402e1bd12f51387863a40cb"
   else
-    url "https://github.com/openbootdotdev/openboot/releases/download/v1.0.7/openboot-darwin-amd64"
-    sha256 "9177e451281e71c8eb86c4f0ef7ae219595edb665afa9fb7de2c02954566a4c3"
+    url "https://github.com/openbootdotdev/openboot/releases/download/v1.0.8/openboot-darwin-amd64"
+    sha256 "06584a472a272438f1aa425c288c65453b86ac22199807b2c40bcb3a2d6ee5d5"
   end
 
   def install
